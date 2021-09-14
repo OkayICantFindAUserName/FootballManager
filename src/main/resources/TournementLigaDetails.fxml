@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="Background" stylesheets="@stylesheet.css" HBox.hgrow="ALWAYS" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controllers.LigaDetailsController">
+   <children>
+      <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+         <children>
+            <TableView fx:id="Table" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="Name" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="teamName" prefWidth="75.0" text="Teamname" />
+                  <TableColumn fx:id="Punkte" prefWidth="75.0" text="Punkte" />
+                  <TableColumn fx:id="Platz" prefWidth="75.0" text="Platz" />
+                  <TableColumn fx:id="Tore" prefWidth="75.0" text="Tore" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</HBox>

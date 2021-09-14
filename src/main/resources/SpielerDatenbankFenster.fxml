@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Background" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controllers.PlayerDatenbankFensterController">
+   <children>
+      <HBox alignment="BOTTOM_CENTER" fillHeight="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+         <children>
+            <JFXTextField fx:id="idTXT" labelFloat="true" promptText="ID" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" top="10.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="nameTXT" labelFloat="true" promptText="Name" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" top="10.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="alterTXT" labelFloat="true" promptText="Alter" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" top="10.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="nationTXT" labelFloat="true" promptText="Nation " HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" top="10.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="posTXT" labelFloat="true" promptText="Position" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" top="10.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="vereinTXT" labelFloat="true" promptText="Verein" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" top="10.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="staerkeTXT" labelFloat="true" promptText="Staerke" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" top="10.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <JFXButton onAction="#filtern" text="Filtern">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="tableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="460.0" prefWidth="950.0" HBox.hgrow="ALWAYS">
+               <columns>
+                  <TableColumn fx:id="idCLN" minWidth="50.0" prefWidth="50.0" text="ID" />
+                  <TableColumn fx:id="nameCLN" minWidth="200.0" prefWidth="200.0" text="Name" />
+                  <TableColumn fx:id="alterCLN" minWidth="50.0" prefWidth="157.0" text="Alter" />
+                  <TableColumn fx:id="nationCLN" minWidth="181.0" prefWidth="181.0" text="Nation" />
+                  <TableColumn fx:id="positionCLN" minWidth="79.0" prefWidth="79.0" text="Position" />
+                  <TableColumn fx:id="vereinCLN" minWidth="0.0" prefWidth="158.0" text="Verein" />
+                  <TableColumn fx:id="strengthCLN" minWidth="0.0" prefWidth="117.0" text="Stärke" />
+               </columns>
+            </TableView>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

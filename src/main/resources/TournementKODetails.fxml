@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="Background" stylesheets="@stylesheet.css" HBox.hgrow="ALWAYS" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controllers.KODetailController">
+   <children>
+      <VBox fx:id="VBox5" alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+         <children>
+            <VBox styleClass="innerHbox">
+               <children>
+                  <VBox>
+                     <children>
+                        <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                           <children>
+                              <Text fx:id="bracket51" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                           <children>
+                              <Text fx:id="bracket52" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="innerHbox" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket53" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket54" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket55" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket56" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="innerHbox" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket57" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket58" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket59" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket510" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="innerHbox" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket511" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket512" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket513" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket514" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="innerHbox" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket515" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket516" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket517" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket518" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="innerHbox" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket519" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket520" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket521" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket522" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="innerHbox" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket523" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket524" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket525" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket526" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="innerHbox" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket527" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket528" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket529" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket530" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="innerHbox" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket531" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket532" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="VBox4" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Pane minHeight="25.0" prefHeight="50.0" prefWidth="200.0" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket41" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket42" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="innerHbox" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket43" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket44" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket45" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket46" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="innerHbox" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket47" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket48" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket49" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket410" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="innerHbox" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket411" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket412" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket413" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket414" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="innerHbox" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket415" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket416" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane minHeight="25.0" prefHeight="20.0" prefWidth="200.0" />
+         </children>
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="VBox3" alignment="CENTER" layoutX="195.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Pane minHeight="75.0" prefHeight="20.0" prefWidth="200.0" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket35" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket36" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="innerHbox" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket37" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket38" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket31" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket32" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="innerHbox" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket33" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket34" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane minHeight="75.0" prefHeight="50.0" prefWidth="200.0" />
+         </children>
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="VBox2" alignment="CENTER" layoutX="616.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Pane minHeight="150.0" prefHeight="50.0" prefWidth="200.0" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket21" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket22" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="400.0" prefWidth="200.0" styleClass="innerHbox" />
+            <VBox styleClass="innerHbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket23" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket24" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane minHeight="150.0" prefHeight="20.0" prefWidth="200.0" />
+         </children>
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="VBox1" alignment="CENTER" layoutX="690.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Pane minHeight="150.0" prefHeight="50.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <VBox>
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket11" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket12" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane minHeight="150.0" prefHeight="20.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <VBox layoutX="10.0" layoutY="386.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket111" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="UnderLinedText">
+                     <children>
+                        <Text fx:id="bracket121" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane layoutX="10.0" layoutY="48.0" minHeight="50.0" prefHeight="25.0" prefWidth="200.0" />
+         </children>
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>

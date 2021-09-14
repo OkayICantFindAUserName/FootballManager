@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<BorderPane fx:id="root" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controllers.HauptmenueController">
+    <left>
+        <VBox alignment="CENTER" prefWidth="170.0" styleClass="sidebar" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER_LEFT" VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <children>
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="150.0" onAction="#switchToprofilbearbeiten" ripplerFill="WHITE" styleClass="sidebarButton" text="Profil Bearbeiten" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontAwesomeIcon fill="WHITE" iconName="PENCIL_SQUARE_ALT" />
+                            </graphic>
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <children>
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#switchToSpieler" ripplerFill="WHITE" styleClass="sidebarButton" text="Spieler Übersicht" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontAwesomeIcon fill="WHITE" iconName="SOCCER_BALL_ALT" />
+                            </graphic>
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <children>
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="150.0" onAction="#switchToLootboxen" ripplerFill="WHITE" styleClass="sidebarButton" text="Lootboxen Kaufen" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontAwesomeIcon fill="WHITE" iconName="DROPBOX" />
+                            </graphic>
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <children>
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="150.0" onAction="#switchToFreunde" ripplerFill="WHITE" styleClass="sidebarButton" text="Freunde Übersicht" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontAwesomeIcon fill="WHITE" iconName="WECHAT" />
+                            </graphic>
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <children>
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="150.0" onAction="#switchToTeam" ripplerFill="WHITE" styleClass="sidebarButton" text="Eigenes Team" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontAwesomeIcon fill="WHITE" iconName="USERS" />
+                            </graphic>
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="158.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="150.0" onAction="#switchToMatch" ripplerFill="WHITE" styleClass="sidebarButton" text="Match" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontAwesomeIcon fill="WHITE" iconName="USERS" />
+                            </graphic>
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <graphic>
+                                <ImageView blendMode="SRC_ATOP" fitHeight="25.0" fitWidth="25.0" preserveRatio="true">
+                                    <image>
+                                        <!--https://coolsilh.com/plaster_rough_001/image/155938.html-->
+                                        <Image url="@Icon/handshake.png" />
+                                    </image>
+                                    <effect>
+                                        <BoxBlur height="1.2" width="1.2" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="193.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="150.0" onAction="#switchToTurnier" ripplerFill="WHITE" styleClass="sidebarButton" text="Turnier" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <graphic>
+                                <ImageView blendMode="SRC_ATOP" fitHeight="25.0" fitWidth="25.0" preserveRatio="true">
+                                    <image>
+                                        <!--https://coolsilh.com/plaster_rough_001/image/160117.html-->
+                                        <Image url="@Icon/Pokal.png" />
+                                    </image>
+                                    <effect>
+                                        <BoxBlur height="1.2" width="1.2" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <children>
+                  <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="150.0" onAction="#switchToNachrichten" ripplerFill="WHITE" styleClass="sidebarButton" text="Nachrichten" HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView blendMode="SRC_ATOP" fitHeight="25.0" fitWidth="25.0" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/brief.png" />
+                           </image>
+                           <effect>
+                              <BoxBlur height="1.2" width="1.2" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+                <Pane prefHeight="50.0" />
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="193.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="150.0" onAction="#switchToStatistik" ripplerFill="WHITE" styleClass="sidebarButton" text="Statistiken" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <graphic>
+                                <ImageView blendMode="SRC_ATOP" fitHeight="25.0" fitWidth="25.0" preserveRatio="true">
+                                    <image>
+                                        <!--https://coolsilh.com/plaster_rough_001/image/160117.html-->
+                                        <Image url="@Icon/Pokal.png" />
+                                    </image>
+                                    <effect>
+                                        <BoxBlur height="1.2" width="1.2" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <Pane prefHeight="50.0" />
+                <HBox alignment="CENTER_LEFT" VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <children>
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="150.0" onAction="#switchToLogin" ripplerFill="WHITE" styleClass="sidebarButton" text="Log Out" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontAwesomeIcon fill="WHITE" iconName="SIGN_OUT" />
+                            </graphic>
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <Pane prefHeight="50.0" />
+                <HBox alignment="CENTER_LEFT" VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <children>
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="150.0" onAction="#exit" ripplerFill="WHITE" styleClass="sidebarButton" text="Spiel Verlassen" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontAwesomeIcon fill="WHITE" iconName="TIMES" />
+                            </graphic>
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="193.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+            </children>
+            <BorderPane.margin>
+                <Insets right="10.0" />
+            </BorderPane.margin>
+        </VBox>
+    </left>
+    <top>
+        <HBox alignment="CENTER_LEFT" BorderPane.alignment="CENTER_LEFT">
+            <children>
+                <HBox alignment="CENTER" prefHeight="75.0" prefWidth="170.0" styleClass="hauptmenueLabel">
+                    <children>
+                        <Label text="Hauptmenü" textFill="WHITE">
+                            <font>
+                                <Font size="22.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Text fx:id="sepsTXT" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </HBox.margin>
+                        </Text>
+                        <Text fx:id="plaetzeTXT" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </HBox.margin>
+                        </Text>
+                        <Text fx:id="StadtionNameTXT" fill="WHITE" layoutX="20.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </HBox.margin>
+                        </Text>
+                        <Text fx:id="KapazitaetLevelTXT" fill="WHITE" layoutX="20.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </HBox.margin>
+                        </Text>
+                        <Text fx:id="ParkplatzLevelTXT" fill="WHITE" layoutX="20.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </HBox.margin>
+                        </Text>
+                        <Text fx:id="RestaurantLevelTXT" fill="WHITE" layoutX="20.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </HBox>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </HBox>
+    </top>
+    <center>
+        <VBox fx:id="vbox" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+        </VBox>
+    </center>
+</BorderPane>

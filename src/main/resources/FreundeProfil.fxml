@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controllers.FreundeProfilController">
+   <children>
+      <HBox>
+         <children>
+            <VBox alignment="CENTER" prefWidth="350.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Text fx:id="friendname" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="teamname" fill="WHITE" layoutX="149.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="300.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="StartelfTBL" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <columns>
+                        <TableColumn fx:id="startelfNameCLN" prefWidth="110.19998168945312" text="Name" />
+                        <TableColumn fx:id="startelfstrengthCLN" prefWidth="203.79998779296875" text="Stärke" />
+                        <TableColumn fx:id="startElfPosCLN" prefWidth="85.00006103515625" text="Pos" />
+                     </columns>
+                  </TableView>
+               </children></VBox>
+         </children>
+      </HBox>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="Background" stylesheets="@Style.css">
+         <children>
+            <VBox alignment="CENTER" prefWidth="350.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <BarChart fx:id="barChart" styleClass="chart">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" fx:id="xAchse" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="yAchse" side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+               <children>
+                  <Text fx:id="tore" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="gegenTore" fill="WHITE" layoutX="149.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="siege" fill="WHITE" layoutX="149.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="niederlagen" fill="WHITE" layoutX="149.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="unentschieden" fill="WHITE" layoutX="135.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="Spiele" fill="WHITE" layoutX="135.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="winrate" fill="WHITE" layoutX="135.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

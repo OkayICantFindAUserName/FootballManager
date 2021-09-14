@@ -1,0 +1,45 @@
+Index: src/main/java/Client/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Client;\r\n\r\nimport javafx.application.Application;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.scene.Parent;\r\nimport javafx.scene.Scene;\r\nimport javafx.stage.Stage;\r\n\r\nimport java.io.IOException;\r\n\r\n/**\r\n * JavaFX App\r\n */\r\npublic class Main extends Application {\r\n\r\n    private static Scene scene;\r\n\r\n    @Override\r\n    public void start(Stage stage) throws IOException {\r\n        scene = new Scene(loadFXML(\"Primary\"), 640, 480);\r\n        stage.setScene(scene);\r\n        stage.show();\r\n    }\r\n\r\n    static void setRoot(String fxml) throws IOException {\r\n        scene.setRoot(loadFXML(fxml));\r\n    }\r\n\r\n    private static Parent loadFXML(String fxml) throws IOException {\r\n        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getClassLoader().getResource(fxml + \".fxml\"));\r\n        return fxmlLoader.load();\r\n    }\r\n\r\n    public static void main(String[] args) {\r\n        launch();\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/Client/Main.java	(revision 50d33ff94b12cd08c2a19a14874172225a46815c)
++++ src/main/java/Client/Main.java	(date 1589471692867)
+@@ -17,7 +17,7 @@
+ 
+     @Override
+     public void start(Stage stage) throws IOException {
+-        scene = new Scene(loadFXML("Primary"), 640, 480);
++        scene = new Scene(loadFXML("LoginFenster"), 640, 480);
+         stage.setScene(scene);
+         stage.show();
+     }
+@@ -27,7 +27,7 @@
+     }
+ 
+     private static Parent loadFXML(String fxml) throws IOException {
+-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getClassLoader().getResource(fxml + ".fxml"));
++        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxml + ".fxml"));
+         return fxmlLoader.load();
+     }
+ 
+Index: src/main/java/Client/PrimaryController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Client;\r\n\r\nimport javafx.fxml.FXML;\r\n\r\nimport java.io.IOException;\r\n\r\npublic class PrimaryController {\r\n\r\n    @FXML\r\n    private void switchToSecondary() throws IOException {\r\n        Main.setRoot(\"Secondary\");\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/Client/PrimaryController.java	(revision 50d33ff94b12cd08c2a19a14874172225a46815c)
++++ src/main/java/Client/PrimaryController.java	(date 1589469345859)
+@@ -8,6 +8,6 @@
+ 
+     @FXML
+     private void switchToSecondary() throws IOException {
+-        Main.setRoot("Secondary");
++        Main.setRoot("secondary");
+     }
+-}
++} 

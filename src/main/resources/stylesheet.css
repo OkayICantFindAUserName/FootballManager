@@ -1,0 +1,182 @@
+* {
+    -fx-firstColor: #00A2D3;
+    -fx-secondColor: #333645;
+    -fx-buttonColor: #333645;
+    -fx-hoverColor: #454959;
+    -fx-background: linear-gradient(from 50.8% 50.8% to 51% 51%, #333645, #00A2D3);
+    -fx-textColor: #262626;
+}
+
+.root {
+
+    -fx-background-color: -fx-background;
+    -fx-border-color: white;
+
+}
+
+.innerHbox{
+
+    -fx-border-color: white;
+    -fx-border-width: 0 1 0 0;
+
+}
+
+.ueberschrift {
+
+    -fx-text-fill: -fx-textColor;
+    -fx-font-size: 30px;
+}
+
+.button {
+
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-border-color: #4059a9;
+    -fx-border-radius: 0px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: black;
+}
+
+.button:hover {
+
+    -fx-background-color: #4177c8;
+    -fx-cursor: hand;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+}
+
+.textHbox {
+    -fx-border-color: black;
+    -fx-border-width: 0 0 1 0;
+}
+
+.contentPlattform {
+    -fx-background-color: rgba(51, 54, 69, 0.7);
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, black, 20, 0, 5, 5);
+}
+
+.hauptmenueLabel {
+    -fx-background-color: -fx-firstColor;
+    -fx-effect: dropshadow(three-pass-box, black, 20, 0, 5, 0);
+
+}
+
+.umrnadung{
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+}
+
+.sidebar {
+    -fx-background-color: Transparent;
+    -fx-effect: dropshadow(three-pass-box, black, 20, 0, 5, 5);
+
+}
+
+.sidebarButton {
+
+    -fx-border-color: transparent;
+    -fx-text-fill: grey;
+
+}
+
+.tab-header-background {
+    -fx-background-color: rgba(69, 73, 89, 1);
+
+}
+
+.tab-selected-line {
+    -fx-background-color: rgb(174, 234, 255);
+
+}
+
+.text {
+    -fx-fill: white;
+}
+
+.text-input {
+    -fx-text-fill: white;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(three-pass-box, black, 20, 0, 5, 5);
+
+}
+
+.table-view:row-selection .virtual-flow .corner {
+    -fx-background-color: rgba(69, 73, 89, 0.75);
+}
+
+.table-view .scroll-bar {
+    -fx-background-color: rgba(69, 73, 89, 0.75);
+}
+
+
+.table-view:focused {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: rgba(69, 73, 89, 0.75);
+}
+
+.table-view .column-header-background .label {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: white;
+}
+
+.table-row-cell {
+    -fx-background-color: rgba(69, 73, 89, 0.75);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: rgba(100, 140, 161, 0.75);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #4177c8;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view .filler {
+    -fx-background-color: rgba(69, 73, 89, 0.51);
+}
+
+.choice-box .context-menu {
+    -fx-background-color: -fx-secondColor;
+}
+
+
+.choice-box .menu-item:focused {
+    -fx-background-color: -fx-firstColor;
+}
+
+.choice-box {
+    -fx-background-color: Transparent;
+    -fx-border-color: white;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow{
+    -fx-background-color: white;
+}
+
+.choice-box .open-button .arrow{
+    -fx-background-color: white;
+}

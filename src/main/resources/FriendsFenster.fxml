@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: Transparent;" stylesheets="@stylesheet.css" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controllers.FriendsFensterController">
+   <children>
+      <HBox>
+         <children>
+            <JFXTextField fx:id="requestTXT" labelFloat="true" promptText="Name des Freundes" styleClass="TextField" unFocusColor="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="requestBTN" onAction="#sentRequest" text="Freundschafts Anfrage verschicken" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+         </VBox.margin>
+      </HBox>
+      <JFXTabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+         <tabs>
+            <Tab text="Angefragte Freunde">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="44.0" prefWidth="200.0">
+                           <children>
+                              <JFXTextField fx:id="requestNameTXT" labelFloat="true" promptText="Name" styleClass="TextField">
+                                 <HBox.margin>
+                                    <Insets bottom="2.0" left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField fx:id="requestEmailTXT" labelFloat="true" layoutX="215.0" layoutY="20.0" promptText="EMail" styleClass="TextField">
+                                 <HBox.margin>
+                                    <Insets bottom="2.0" left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXButton onAction="#suchenR" text="Filltern">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <TableView fx:id="pendingFriendsTBL" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <columns>
+                              <TableColumn fx:id="pendingNameCLN" prefWidth="75.0" text="Name" />
+                              <TableColumn fx:id="pendingEmailCLN" prefWidth="75.0" text="Email" />
+                           </columns>
+                           <VBox.margin>
+                              <Insets bottom="22.0" left="22.0" right="22.0" top="22.0" />
+                           </VBox.margin>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+            <Tab text="Freundschafts Anfragen">
+               <content>
+                  <VBox>
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" styleClass="LoginInnerVBox" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="44.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="pendingNameTXT" alignment="CENTER" promptText="Name" styleClass="UnderLinedText" />
+                                          <TextField fx:id="pendingEmailTXT" alignment="CENTER" promptText="Email" styleClass="UnderLinedText" />
+                                          <Button mnemonicParsing="false" onAction="#suchenP" styleClass="UniversalButton" text="Suchen" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <TableView fx:id="requestTBL" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                       <columns>
+                                          <TableColumn fx:id="requestNameCLN" prefWidth="75.0" text="Name" />
+                                          <TableColumn fx:id="requestEmailCLN" prefWidth="75.0" text="Email" />
+                                       </columns>
+                                    </TableView>
+                                    <HBox alignment="CENTER">
+                                       <children>
+                                          <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#accept" styleClass="UniversalButton" text="Accept" />
+                                          <Button mnemonicParsing="false" onAction="#decline" styleClass="UniversalButton" text="decline" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+            <Tab text="Freunde">
+               <content>
+                  <VBox alignment="CENTER" styleClass="LoginInnerVBox">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#remove" styleClass="UniversalButton" text="remove" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <TableView fx:id="FriendstableTBL" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                           <columns>
+                              <TableColumn fx:id="friendNameCLN" prefWidth="75.0" text="Name" />
+                              <TableColumn fx:id="friendEmailCLN" prefWidth="75.0" text="Email" />
+                           </columns>
+                        </TableView>
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="vNameTXT" alignment="CENTER" promptText="Name" styleClass="UnderLinedText" />
+                              <TextField fx:id="vEmailTXT" alignment="CENTER" promptText="Email" styleClass="UnderLinedText" />
+                              <Button mnemonicParsing="false" onAction="#suchenF" styleClass="UniversalButton" text="Suchen" />
+                              <Button layoutX="424.0" layoutY="10.0" mnemonicParsing="false" onAction="#showprofil" styleClass="UniversalButton" text="Profil">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</VBox>

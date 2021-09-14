@@ -1,0 +1,218 @@
+/*.root {
+    -fx-font-size: 14px;
+    -fx-font-family: sans-serif;
+}
+
+.UniversalText {
+    -fx-text-fill: white;
+    -fx-background-color: #1f1f4d;
+
+}
+
+.UnderLinedText {
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-background-color: transparent;
+
+}
+
+.LoginHBox {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+.VboxDivider {
+
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 1px 0px 0px 0px;
+
+}
+
+.UniversalButton {
+
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-width: 1px;
+    -fx-border-color: white;
+
+}
+
+.label {
+
+    -fx-text-fill: white;
+}
+
+.UniversalButton:hover {
+
+    -fx-background-color: #7f7fcc;
+    -fx-text-fill: white;
+    -fx-border-width: 1px;
+    -fx-border-color: white;
+}
+
+.TaskbarButton {
+
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+
+}
+
+.TaskbarButton:hover {
+
+    -fx-background-color: #7f7fcc;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+
+}
+
+.LoginInnerVBox {
+
+    -fx-background-color: #1f1f4d;
+
+}
+
+.LoginOuterVBox {
+
+    -fx-background-color: #181842;
+
+}
+
+.Background {
+
+    -fx-background-color: #101038;
+
+}
+
+.StatusColor {
+
+    -fx-background-color: #3c3cc1;
+
+}
+
+.TaskbarFunctions {
+
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-background-color: #7f7fcc;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+
+}
+
+.MainWindowsVBox {
+
+    -fx-background-color: #2f2f51;
+
+}
+
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view:row-selection .virtual-flow .corner{
+    -fx-background-color: #2f2f51;
+}
+
+.table-view .scroll-bar{
+    -fx-background-color: #2f2f51;
+}
+
+
+.table-view:focused {
+    -fx-background-color: transparent;
+}
+
+Spaltenköpfe
+    Struktur column-header-background -> column-header
+
+.table-view .column-header-background {
+    -fx-background-color: #181842;
+}
+
+.table-view .column-header-background .label {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: white;
+}
+
+.table-row-cell {
+    -fx-background-color: -fx-table-cell-border-color, #181842;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: -fx-table-cell-border-color, #2f2f51;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view .filler {
+    -fx-background-color: #181842;
+}
+
+.choice-box {
+    -fx-background-color: #2f2f51;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: #2f2f51;
+}
+
+.choice-box .menu-item:focused {
+    -fx-background-color: #4e4e78;
+}
+
+.choice-box .menu-item > .label {
+    -fx-text-fill: white;
+}
+
+.choice-box .menu-item:focused > .label {
+    -fx-text-fill: white;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow{
+    -fx-background-color: white;
+}
+
+
+.innerHbox{
+    -fx-border-color: white;
+    -fx-border-width: 2px 2px 0px 2px;
+}
+
+.chart-plot-background{
+    -fx-background-color: Transparent;
+}
+.chart-legend {
+    -fx-background-color:  transparent;
+    -fx-padding: 20px;
+}
+
+.chart-legend-item-symbol{
+    -fx-background-radius: 0;
+}
+
+.chart-legend-item{
+    -fx-text-fill: #191970;
+}*/

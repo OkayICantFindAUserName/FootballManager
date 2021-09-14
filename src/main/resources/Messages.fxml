@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<JFXTabPane stylesheets="@stylesheet.css" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controllers.ChatController">
+   <tabs>
+      <Tab text="Nachricht schreiben">
+         <content>
+            <VBox alignment="CENTER">
+               <children>
+                  <TableView fx:id="FriendstableTBL">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <columns>
+                        <TableColumn fx:id="friendNameCLN" prefWidth="200.0" text="Freund" />
+                     </columns>
+                  </TableView>
+                  <JFXButton onAction="#openNewWindow" text="Schreiben" />
+               </children>
+            </VBox>
+         </content>
+      </Tab>
+      <Tab onSelectionChanged="#refresh" text="Posteingang">
+         <content>
+            <VBox alignment="CENTER">
+               <children>
+                  <TableView fx:id="MessagetableTBL" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <columns>
+                        <TableColumn fx:id="SenderNameCLN" prefWidth="110.0" text="Sender" />
+                        <TableColumn fx:id="DateCLN" prefWidth="91.0" text="Datum" />
+                        <TableColumn fx:id="NachrichtCLN" prefWidth="386.0" text="Nachricht" />
+                     </columns>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TableView>
+                  <JFXButton onAction="#refresh" text="Refresh" />
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </Tab>
+      <Tab onSelectionChanged="#refreshSent" text="Gesendet">
+         <content>
+            <VBox alignment="CENTER">
+               <children>
+                  <TableView fx:id="SenttableTBL" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <columns>
+                        <TableColumn fx:id="ReceiverCLN" prefWidth="75.0" text="Empfänger" />
+                        <TableColumn fx:id="ReceiveDateCLN" prefWidth="75.0" text="Datum" />
+                        <TableColumn fx:id="GesendeteNachrichtCLN" minWidth="100.0" prefWidth="600.0" text="Nachricht" />
+                     </columns>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TableView>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <JFXButton onAction="#refreshSent" text="Refresh" />
+               </children>
+            </VBox>
+         </content>
+      </Tab>
+   </tabs>
+</JFXTabPane>
